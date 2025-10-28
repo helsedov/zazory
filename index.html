@@ -254,7 +254,7 @@
         `КД в Metro: ${kd}\n` +
         `FPS: ${fps}`;
 
-      const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${adminId}&text=${encodeURIComponent(message)}`;
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${adminId}&text=${message}`;
 
       fetch(url)
         .then(res => {
