@@ -1,0 +1,286 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+    
+                
+              </style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>zyzory team</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #6a0dad; /* Фиолетовый фон */
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(106, 13, 173, 0.9);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4fc3f7; /* Светло-голубой */
+      font-size: 2.4em;
+      margin-bottom: 25px;
+      text-shadow: 0 0 12px rgba(79, 195, 247, 0.7);
+    }
+
+    h2 {
+      color: #bb86fc;
+      margin-top: 25px;
+      border-bottom: 1px solid #555;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .benefits {
+      background-color: rgba(20, 20, 20, 0.8);
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin: 16px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background-color: #2c2c2c;
+      color: white;
+      font-size: 16px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .apply-btn {
+      background-color: #4fc3f7;
+      color: black;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 17px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .apply-btn:hover {
+      background-color: #bb86fc;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>zyzory team</h1>
+
+    <h2>Критерии для вступления</h2>
+    <ul>
+      <li>Возраст: 10+</li>
+      <li>Адекватность</li>
+      <li>Наличие микрофона (возможны исключения)</li>
+      <li>Устройство: 40 FPS и выше</li>
+      <li>Активность в чате клана</li>
+      <li>Возможность смены никнейма (исключения возможны)</li>
+      <li>Прохождение ТДМ-проверки</li>
+      <li>КД в Metro Royale ≥ 1 (исключения возможны)</li>
+    </ul>
+
+    <div class="benefits">
+      <h2>Что вы получите от нас</h2>
+      <ul>
+        <li>Множество розыгрышей</li>
+        <li>Добрые и поддерживающие со-кланы</li>
+        <li>Организация турниров</li>
+        <li>Дружеская атмосфера и помощь новичкам</li>
+      </ul>
+    </div>
+
+    <h2>Подать заявку</h2>
+    <form id="applyForm">
+      <div class="form-group">
+        <label for="nickname">Никнейм в игре</label>
+        <input type="text" id="nickname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pubgId">Ваш PUBG ID</label>
+        <input type="number" id="pubgId" placeholder="Только цифры" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Возраст</label>
+        <input type="number" id="age" min="10" max="99" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tg">Ваш Telegram (без @)</label>
+        <input type="text" id="tg" required>
+      </div>
+
+      <div class="form-group">
+        <label>Есть ли микрофон?</label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" name="mic" value="Да" id="micYes" required>
+            <label for="micYes">Да</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="mic" value="Нет" id="micNo">
+            <label for="micNo">Нет</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Можете сменить никнейм?</label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" name="rename" value="Да" id="renameYes" required>
+            <label for="renameYes">Да</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="rename" value="Нет" id="renameNo">
+            <label for="renameNo">Нет</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="kd">КД в Metro Royale</label>
+        <input type="number" id="kd" step="0.1" min="0" placeholder="Например: 1.5" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fps">FPS на вашем устройстве</label>
+        <select id="fps" required>
+          <option value="">— Выберите —</option>
+          <option value="40-59">40–59 FPS</option>
+          <option value="60">60 FPS</option>
+          <option value="60+">60+ FPS</option>
+          <option value="30-39">30–39 FPS (ниже требуемого)</option>
+        </select>
+      </div>
+
+      <button type="button" class="apply-btn" onclick="sendApplication()">Отправить заявку</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 zyzory team — PUBG Metro Royale
+  </footer>
+
+  <script>
+    function sendApplication() {
+      const nick = document.getElementById('nickname').value.trim();
+      const pubgId = document.getElementById('pubgId').value.trim();
+      const age = document.getElementById('age').value.trim();
+      const tg = document.getElementById('tg').value.trim();
+      const mic = document.querySelector('input[name="mic"]:checked')?.value;
+      const rename = document.querySelector('input[name="rename"]:checked')?.value;
+      const kd = document.getElementById('kd').value.trim();
+      const fps = document.getElementById('fps').value;
+
+      if (!nick || !pubgId || !age || !tg || !mic || !rename || !kd || !fps) {
+        alert('Пожалуйста, заполните все поля!');
+        return;
+      }
+
+      // === ЗАМЕНИТЕ ЭТИ ДАННЫЕ НА СВОИ ===
+      const botToken = 'YOUR_BOT_TOKEN'; // ← сюда токен от @BotFather
+      const adminId = 'YOUR_ADMIN_ID';   // ← сюда ваш Telegram ID
+
+      const message = 
+        `📥 Новая заявка в клан zyzory team:\n\n` +
+        `Ник: ${nick}\n` +
+        `PUBG ID: ${pubgId}\n` +
+        `Возраст: ${age}\n` +
+        `Telegram: @${tg}\n` +
+        `Микрофон: ${mic}\n` +
+        `Смена ника: ${rename}\n` +
+        `КД в Metro: ${kd}\n` +
+        `FPS: ${fps}`;
+
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${adminId}&text=${encodeURIComponent(message)}`;
+
+      fetch(url)
+        .then(res => {
+          if (res.ok) {
+            alert('✅ Заявка успешно отправлена! Админ скоро свяжется с вами.');
+            document.getElementById('applyForm').reset();
+          } else {
+            alert('❌ Ошибка сервера Telegram. Проверьте токен и ID.');
+          }
+        })
+        .catch(() => {
+          alert('❌ Не удалось отправить заявку. Проверьте интернет или настройки бота.');
+        });
+    }
+  </script>
+</body>
+</html>
+
+
+    
+              <script>
+                                 const botToken = '8426455435:AAEPHwgJrdaFUPc8dXynPpXdJIckWEeoavs';
+   const adminId = '7769042665';
+   
+
+              </script>
+                        </body>
+                        </html>
+                    
